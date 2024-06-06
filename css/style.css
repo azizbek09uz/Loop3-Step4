@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.container {
+  background-color: #424d84;
+  padding: 19px 15px 15px 15px;
+  width: 443px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.container .lines {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+.container .m2 {
+  transform: translateY(27px);
+}
+.container .lines .line {
+  align-content: end;
+  height: 100%;
+  margin: 0 0.7rem;
+}
+.container .lines .line .month {
+  color: white;
+  opacity: 0.6;
+  margin-top: 0.5rem;
+}
+.container .lines .line .line-item {
+  background-color: white;
+  opacity: 0.6;
+  width: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+.container .lines .line:nth-child(1) .line-item {
+  height: 80%;
+}
+.container .lines .line:nth-child(2) .line-item {
+  height: 100%;
+}
+.container .lines .line:nth-child(3) .line-item {
+  height: 50%;
+}
+.container .lines .line:nth-child(4) .line-item {
+  height: 35%;
+}
+.container .lines .line:nth-child(5) .line-item {
+  height: 60%;
+}
+.container .lines .line:nth-child(6) .line-item {
+  height: 75%;
+}
+.container .lines .line:nth-child(7) .line-item {
+  height: 30%;
+}
+.container .lines .line:nth-child(8) .line-item {
+  height: 100%;
+}
+.container .lines .line:nth-child(9) .line-item {
+  height: 70%;
+}
+.container .lines .line:nth-child(10) .line-item {
+  height: 80%;
+}
+.container .lines .line.blue .month {
+  opacity: 1;
+}
+.container .lines .line.blue .line-item {
+  background-color: #3398dc;
+  opacity: 1;
+}
+.container .bottom {
+  margin-top: 5rem;
+  display: flex;
+}
+.container .bottom .round {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  margin-right: 1.9rem;
+}
+.container .bottom .round .total {
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.81rem;
+  line-height: 17px;
+}
+.container .bottom .about {
+  padding: 0.6rem 2rem 0.6rem 0;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+.container .bottom .about .text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.container .bottom .about .light {
+  color: #fff;
+}
+.container .bottom .about .light:not(.no-m) {
+  margin-left: 0.6rem;
+}
